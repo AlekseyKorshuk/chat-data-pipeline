@@ -2,6 +2,12 @@
 
 This repository helps to clean, filter and deduplicate conversation datasets.
 
+Open Source Community rules the world, so please contribute: open Pull Request or create an Issue.
+
+Star this repository:
+
+[![GitHub stars](https://img.shields.io/github/stars/AlekseyKorshuk/chat-data-pipeline?style=social)](https://github.com/AlekseyKorshuk/chat-data-pipeline)
+
 ## Quick Start
 
 Clone and install dependencies:
