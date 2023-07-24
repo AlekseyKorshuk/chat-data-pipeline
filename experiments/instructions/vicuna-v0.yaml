@@ -1,0 +1,42 @@
+datasets:
+  - dataset_path: "AlekseyKorshuk/gpteacher-instruct-chatml"
+  - dataset_path: "AlekseyKorshuk/sharegpt-chatml"
+  - dataset_path: "AlekseyKorshuk/gpt4-llm-cleaned-chatml"
+
+output_dataset_path: "AlekseyKorshuk/vicuna-v0-chatml"
+verbose: False
+
+instruction_config:
+  cleaners:
+  filters:
+    check_word_number:
+      args:
+        min_word_threshold: 2
+        max_word_threshold: 9999999
+
+  deduplication:
+    do_deduplication: True
+    minhash_config:
+      ngram_size: 5
+      num_perm: 256
+      threshold: 0.7
+      min_ngram_size: 5
+
+response_config:
+  cleaners:
+  filters:
+    check_word_number:
+      args:
+        min_word_threshold: 10
+        max_word_threshold: 9999999
+    check_ethics:
+
+  deduplication:
+    do_deduplication: True
+    minhash_config:
+      ngram_size: 5
+      num_perm: 256
+      threshold: 0.7
+      min_ngram_size: 5
+
+
