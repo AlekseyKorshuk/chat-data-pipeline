@@ -93,5 +93,5 @@ preprocessed_dataset = preprocessor.run()
 
 ## Acknowledgment
 
-This is a friendly fork of Squeakily by CarperAI, but this repository aims only on conversation data, uses pandas to
+This is a friendly fork of Squeakily by CarperAI, but this repository aims at conversation data, uses pandas to
 speed up the pipeline and latest near deduplication. 
